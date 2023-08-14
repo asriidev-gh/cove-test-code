@@ -7,9 +7,7 @@ const Page = () => {
   useEffect(() => {
     callApi().then((result) => {
       let newData = [];
-      console.log('result: ', result);
       if (result) {
-        console.log('result2: ', result);
         result.forEach((item) => {
           console.log('result0: ', item.id);
           newData = [
